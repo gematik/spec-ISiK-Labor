@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesHb",
+  "id": "ObservationCodesHb",
+  "description": "Enthält LOINC-Codes für die Observation Hb",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesHb",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "version": "4.0.0",
+  "date": "2024-02-23",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "718-7",
+            "display": "Hämoglobin [Masse/Volumen] in Blut"
+          },
+          {
+            "code": "59260-0",
+            "display": "Hämoglobin [Mol/Volumen] in Blut"
+          }
+        ]
+      }
+    ]
+  }
+}

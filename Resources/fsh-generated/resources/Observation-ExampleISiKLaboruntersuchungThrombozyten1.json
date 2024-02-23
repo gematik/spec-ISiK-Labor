@@ -1,39 +1,28 @@
 {
   "resourceType": "Observation",
-  "id": "ExampleISiKLaboruntersuchungSerumkreatinin1",
+  "id": "ExampleISiKLaboruntersuchungThrombozyten1",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumkreatinin"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungThrombozyten"
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "value": 0.7,
-    "code": "mg/dL"
+    "value": 178,
+    "code": "10*3/uL"
   },
   "referenceRange": [
     {
       "low": {
         "system": "http://unitsofmeasure.org",
-        "value": 0.6,
-        "code": "mg/dL"
+        "value": 150,
+        "code": "10*3/uL"
       },
       "high": {
         "system": "http://unitsofmeasure.org",
-        "value": 1.2,
-        "code": "mg/dL"
-      },
-      "appliesTo": [
-        {
-          "coding": [
-            {
-              "code": "248152002",
-              "system": "http://snomed.info/sct",
-              "display": "female"
-            }
-          ]
-        }
-      ]
+        "value": 400,
+        "code": "10*3/uL"
+      }
     }
   ],
   "status": "final",
@@ -53,7 +42,7 @@
   "code": {
     "coding": [
       {
-        "code": "2160-0",
+        "code": "26515-7",
         "system": "http://loinc.org"
       }
     ]

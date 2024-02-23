@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesThrombozyten",
+  "id": "ObservationCodesThrombozyten",
+  "description": "Enthält LOINC-Codes für die Observation Thrombozyten",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesThrombozyten",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "version": "4.0.0",
+  "date": "2024-02-23",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "26515-7",
+            "display": "Thrombozyten [#/Volumen] in Blut"
+          }
+        ]
+      }
+    ]
+  }
+}

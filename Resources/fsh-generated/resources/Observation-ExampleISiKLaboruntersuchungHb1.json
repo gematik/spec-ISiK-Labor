@@ -1,27 +1,27 @@
 {
   "resourceType": "Observation",
-  "id": "ExampleISiKLaboruntersuchungSerumkreatinin1",
+  "id": "ExampleISiKLaboruntersuchungHb1",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumkreatinin"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungHb"
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "value": 0.7,
-    "code": "mg/dL"
+    "value": 11.4,
+    "code": "g/dL"
   },
   "referenceRange": [
     {
       "low": {
         "system": "http://unitsofmeasure.org",
-        "value": 0.6,
-        "code": "mg/dL"
+        "value": 12,
+        "code": "g/dL"
       },
       "high": {
         "system": "http://unitsofmeasure.org",
-        "value": 1.2,
-        "code": "mg/dL"
+        "value": 16,
+        "code": "g/dL"
       },
       "appliesTo": [
         {
@@ -53,7 +53,7 @@
   "code": {
     "coding": [
       {
-        "code": "2160-0",
+        "code": "718-7",
         "system": "http://loinc.org"
       }
     ]

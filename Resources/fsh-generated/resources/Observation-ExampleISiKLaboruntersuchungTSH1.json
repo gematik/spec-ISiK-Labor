@@ -1,39 +1,28 @@
 {
   "resourceType": "Observation",
-  "id": "ExampleISiKLaboruntersuchungSerumkreatinin1",
+  "id": "ExampleISiKLaboruntersuchungTSH1",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumkreatinin"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTSH"
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "value": 0.7,
-    "code": "mg/dL"
+    "value": 3.4,
+    "code": "u[IU]/mL"
   },
   "referenceRange": [
     {
       "low": {
         "system": "http://unitsofmeasure.org",
-        "value": 0.6,
-        "code": "mg/dL"
+        "value": 0.27,
+        "code": "u[IU]/mL"
       },
       "high": {
         "system": "http://unitsofmeasure.org",
-        "value": 1.2,
-        "code": "mg/dL"
-      },
-      "appliesTo": [
-        {
-          "coding": [
-            {
-              "code": "248152002",
-              "system": "http://snomed.info/sct",
-              "display": "female"
-            }
-          ]
-        }
-      ]
+        "value": 4.2,
+        "code": "u[IU]/mL"
+      }
     }
   ],
   "status": "final",
@@ -53,7 +42,7 @@
   "code": {
     "coding": [
       {
-        "code": "2160-0",
+        "code": "3015-5",
         "system": "http://loinc.org"
       }
     ]

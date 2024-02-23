@@ -30,8 +30,8 @@ Usage: #example
 * category = $cs-observation-category#final
 * subject.reference = "Patient/PatientinMusterfrau"
 * code = $cs-loinc#2160-0
-* valueQuantity = 0.7 $cs-ucum#mg/dl
+* valueQuantity = 0.7 $cs-ucum#mg/dL
 * referenceRange
-  * low = 0.6 $cs-ucum#mg/dl
-  * high = 1.2 $cs-ucum#mg/dl
-  * appliesTo = $cs-sct#248153007 "male"
+  * low = 0.6 $cs-ucum#mg/dL
+  * high = 1.2 $cs-ucum#mg/dL
+  * appliesTo = $cs-sct#248152002 "female"

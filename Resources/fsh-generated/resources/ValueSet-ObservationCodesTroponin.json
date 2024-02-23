@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesTroponin",
+  "id": "ObservationCodesTroponin",
+  "description": "Enthält LOINC-Codes für die Observation Troponin",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesTroponin",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "version": "4.0.0",
+  "date": "2024-02-23",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "42757-5",
+            "display": "Troponin I.kardial [Masse/Volumen] in Blut"
+          },
+          {
+            "code": "48425-3",
+            "display": "Troponin T.kardial [Masse/Volumen] in Blut"
+          }
+        ]
+      }
+    ]
+  }
+}
