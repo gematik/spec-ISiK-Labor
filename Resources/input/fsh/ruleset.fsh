@@ -3,7 +3,7 @@ RuleSet: Meta
 * ^experimental = false
 * ^publisher = "gematik GmbH"
 * ^version = "4.0.0"
-* ^date = "2024-02-01"
+* ^date = "2024-02-23"
 
 // RuleSet: Meta-CapabilityStatementInformation
 // * status = #active

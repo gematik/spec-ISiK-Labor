@@ -1,0 +1,29 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "ObservationCodesSerumkreatinin",
+  "id": "ObservationCodesSerumkreatinin",
+  "description": "Enthält LOINC-Codes für die Observation Serumkreatinin",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesSerumkreatinin",
+  "experimental": false,
+  "publisher": "gematik GmbH",
+  "version": "4.0.0",
+  "date": "2024-02-23",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "2160-0",
+            "display": "Creatinin [Masse/Volumen] in Serum oder Plasma"
+          },
+          {
+            "code": "14682-9",
+            "display": "Creatinin [Mol/Volumen] in Serum oder Plasma"
+          }
+        ]
+      }
+    ]
+  }
+}
