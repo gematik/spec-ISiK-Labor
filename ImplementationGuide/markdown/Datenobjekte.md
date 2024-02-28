@@ -1,7 +1,7 @@
 # Datenobjekte
 
-Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 3](https://simplifier.net/guide/implementierungsleitfaden-isik-basismodul-stufe-3?version=current) werden in diesem Modul verwendet:
-* [Patient](https://simplifier.net/guide/Implementierungsleitfaden-ISiK-Basismodul-Stufe-3/ImplementationGuide-markdown-Datenobjekte-Datenobjekte-Patient?version=current)
+Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 4](https://simplifier.net/guide/isik-basis-v4?version=current) werden in diesem Modul verwendet:
+* [Patient](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient?version=current)
 
 **TBD**
 
