@@ -3,6 +3,8 @@
 Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 4](https://simplifier.net/guide/isik-basis-v4?version=current) werden in diesem Modul verwendet:
 * [Patient](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient?version=current)
 
+Falls in einem Anwendungsfall Laborwerte kommuniziert werden, für die in diesem Implementierungsleitfaden kein spezifisches Profil existiert, SOLL hierfür das generische Profil ISiKLaboruntersuchung unter Verwendung geeigneter LOINC-Codes sowie Einheiten verwendet werden. 
+
 **TBD**
 
 **TODO: Searchparameter (vorläufige Liste, noch zu detaillieren)**
