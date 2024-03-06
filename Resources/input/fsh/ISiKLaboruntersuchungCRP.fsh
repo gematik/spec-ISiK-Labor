@@ -27,7 +27,6 @@ Instance: ExampleISiKLaboruntersuchungCRP1
 InstanceOf: ISiKLaboruntersuchungCRP
 Usage: #example
 * status = #final
-* category = $cs-observation-category#final
 * subject.reference = "Patient/PatientinMusterfrau"
 * code = $cs-loinc#1988-5
 * valueQuantity = 7.4 $cs-ucum#mg/L

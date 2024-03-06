@@ -26,7 +26,6 @@ Instance: ExampleISiKLaboruntersuchungTSH1
 InstanceOf: ISiKLaboruntersuchungTSH
 Usage: #example
 * status = #final
-* category = $cs-observation-category#final
 * subject.reference = "Patient/PatientinMusterfrau"
 * code = $cs-loinc#3015-5
 * valueQuantity = 3.4 $cs-ucum#u[IU]/mL

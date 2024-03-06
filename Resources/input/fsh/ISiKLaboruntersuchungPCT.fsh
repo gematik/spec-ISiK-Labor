@@ -25,7 +25,6 @@ Instance: ExampleISiKLaboruntersuchungPCT1
 InstanceOf: ISiKLaboruntersuchungPCT
 Usage: #example
 * status = #final
-* category = $cs-observation-category#final
 * subject.reference = "Patient/PatientinMusterfrau"
 * code = $cs-loinc#33959-8
 * valueQuantity = 0.2 $cs-ucum#ng/mL

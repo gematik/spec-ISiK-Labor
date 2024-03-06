@@ -27,7 +27,6 @@ Instance: ExampleISiKLaboruntersuchungSerumkreatinin1
 InstanceOf: ISiKLaboruntersuchungSerumkreatinin
 Usage: #example
 * status = #final
-* category = $cs-observation-category#final
 * subject.reference = "Patient/PatientinMusterfrau"
 * code = $cs-loinc#2160-0
 * valueQuantity = 0.7 $cs-ucum#mg/dL

@@ -27,7 +27,6 @@ Instance: ExampleISiKLaboruntersuchungHb1
 InstanceOf: ISiKLaboruntersuchungHb
 Usage: #example
 * status = #final
-* category = $cs-observation-category#final
 * subject.reference = "Patient/PatientinMusterfrau"
 * code = $cs-loinc#718-7
 * valueQuantity = 11.4 $cs-ucum#g/dL
