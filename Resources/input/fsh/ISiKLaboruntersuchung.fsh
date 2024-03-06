@@ -9,6 +9,7 @@ Description: "Dieses Profil ermöglicht die Abbildung von Informationen zur Labo
   * ^short = "Status der Laboruntersuchung"
 * category MS
   * ^short = "Kategorie der Laboruntersuchung"
+* category = ObservationCategoryCodes#laboratory 
 * code MS
   * ^short = "Gegenstand der Untersuchung (Laborparameter)"
 * code from $vs-observation-codes (required)

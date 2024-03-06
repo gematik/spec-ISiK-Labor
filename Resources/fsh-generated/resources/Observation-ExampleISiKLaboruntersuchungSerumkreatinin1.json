@@ -37,16 +37,6 @@
     }
   ],
   "status": "final",
-  "category": [
-    {
-      "coding": [
-        {
-          "code": "final",
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
-        }
-      ]
-    }
-  ],
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
   },

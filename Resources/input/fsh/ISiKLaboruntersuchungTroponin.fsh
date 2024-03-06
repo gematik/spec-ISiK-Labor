@@ -27,7 +27,6 @@ Instance: ExampleISiKLaboruntersuchungTroponin1
 InstanceOf: ISiKLaboruntersuchungTroponin
 Usage: #example
 * status = #final
-* category = $cs-observation-category#final
 * subject.reference = "Patient/PatientinMusterfrau"
 * code = $cs-loinc#42757-5
 * valueQuantity = 0.1 $cs-ucum#ug/L

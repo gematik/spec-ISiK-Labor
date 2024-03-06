@@ -25,7 +25,6 @@ Instance: ExampleISiKLaboruntersuchungThrombozyten1
 InstanceOf: ISiKLaboruntersuchungThrombozyten
 Usage: #example
 * status = #final
-* category = $cs-observation-category#final
 * subject.reference = "Patient/PatientinMusterfrau"
 * code = $cs-loinc#26515-7
 * valueQuantity = 178 $cs-ucum#10*3/uL

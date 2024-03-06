@@ -1,27 +1,23 @@
 {
   "resourceType": "Observation",
-  "id": "ExampleISiKLaboruntersuchungTSH1",
+  "id": "ExampleISiKLaboruntersuchungGFR1",
   "meta": {
     "profile": [
-      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTSH"
+      "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungGFR"
     ]
   },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "value": 3.4,
-    "code": "u[IU]/mL"
+    "value": 100,
+    "code": "mL/min/{1.73_m2}",
+    "unit": "milliliter pro Minute pro Körperoberfläche von 1,73 m2"
   },
   "referenceRange": [
     {
-      "low": {
-        "system": "http://unitsofmeasure.org",
-        "value": 0.27,
-        "code": "u[IU]/mL"
-      },
       "high": {
         "system": "http://unitsofmeasure.org",
-        "value": 4.2,
-        "code": "u[IU]/mL"
+        "value": 100,
+        "code": "mL/min/{1.73_m2}"
       }
     }
   ],
@@ -32,7 +28,7 @@
   "code": {
     "coding": [
       {
-        "code": "3015-5",
+        "code": "98980-6",
         "system": "http://loinc.org"
       }
     ]

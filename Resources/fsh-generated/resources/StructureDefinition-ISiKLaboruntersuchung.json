@@ -65,6 +65,14 @@
         "id": "Observation.category",
         "path": "Observation.category",
         "short": "Kategorie der Laboruntersuchung",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "laboratory",
+              "system": "http://hl7.org/fhir/secondary-finding"
+            }
+          ]
+        },
         "mustSupport": true
       },
       {
