@@ -6,6 +6,29 @@
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungTSH"
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "61167004",
+        "system": "http://snomed.info/sct",
+        "display": "Thyroid stimulating hormone measurement"
+      },
+      {
+        "code": "3015-5",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 3.4,
@@ -28,13 +51,5 @@
   "status": "final",
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
-  },
-  "code": {
-    "coding": [
-      {
-        "code": "3015-5",
-        "system": "http://loinc.org"
-      }
-    ]
   }
 }

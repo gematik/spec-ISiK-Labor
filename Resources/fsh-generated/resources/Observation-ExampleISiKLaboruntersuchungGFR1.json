@@ -6,6 +6,29 @@
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungGFR"
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "80274001",
+        "system": "http://snomed.info/sct",
+        "display": "Glomerular filtration rate"
+      },
+      {
+        "code": "98980-6",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 100,
@@ -24,13 +47,5 @@
   "status": "final",
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
-  },
-  "code": {
-    "coding": [
-      {
-        "code": "98980-6",
-        "system": "http://loinc.org"
-      }
-    ]
   }
 }

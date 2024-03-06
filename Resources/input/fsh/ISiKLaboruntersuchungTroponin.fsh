@@ -3,11 +3,12 @@ Parent: ISiKLaboruntersuchung
 Id: ISiKLaboruntersuchungTroponin
 Description: "Dieses Profil ermöglicht die Abbildung der Laboruntersuchung Troponin eines Patienten in ISiK Szenarien."
 * insert Meta
-* code from ObservationCodesTroponin (required)
-* valueQuantity from ObservationUnitsTroponin (required)
+* code.coding[loinc] from ObservationCodesTroponin
+* code.coding[snomed] = $sct#105000003
+* valueQuantity from ObservationUnitsTroponin
 * referenceRange MS
-  * low from ObservationUnitsTroponin (required)
-  * high from ObservationUnitsTroponin (required)
+  * low from ObservationUnitsTroponin
+  * high from ObservationUnitsTroponin
 
 ValueSet: ObservationCodesTroponin
 Id: ObservationCodesTroponin
@@ -28,7 +29,8 @@ InstanceOf: ISiKLaboruntersuchungTroponin
 Usage: #example
 * status = #final
 * subject.reference = "Patient/PatientinMusterfrau"
-* code = $cs-loinc#42757-5
+* code.coding[loinc] = $cs-loinc#42757-5
+* code.coding[snomed] = $sct#105000003 "Troponin measurement"
 * valueQuantity = 0.1 $cs-ucum#ug/L
 * referenceRange
   * high = 0.4 $cs-ucum#ug/L
