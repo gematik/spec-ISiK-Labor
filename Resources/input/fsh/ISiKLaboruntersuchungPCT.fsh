@@ -14,12 +14,15 @@ Id: ObservationCodesPCT
 Description: "Enthält LOINC-Codes für die Observation PCT"
 * insert Meta
 * $cs-loinc#33959-8 "Procalcitonin [Masse/Volumen] in Serum oder Plasma"
+* $cs-loinc#75241-0 "Procalcitonin [Masse/Volumen] in Serum oder Plasma mittels Immunoassay"
+* $cs-loinc#51637-7 "Thrombokrit [Volumenfraktion] in Blut"
 
 ValueSet: ObservationUnitsPCT
 Id: ObservationUnitsPCT
 Description: "Enthält UCUM-Einheiten für die Observation PCT"
 * insert Meta
 * $cs-ucum#ng/mL "nanogram per milliliter"
+* $cs-ucum#% "percent"
 
 Instance: ExampleISiKLaboruntersuchungPCT1
 InstanceOf: ISiKLaboruntersuchungPCT
