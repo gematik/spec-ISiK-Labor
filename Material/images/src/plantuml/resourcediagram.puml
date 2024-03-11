@@ -99,7 +99,7 @@ namespace ISiK_Labor {
    }
    'ISiKMedikation::itemReference --> ISiKMedikation
 
-   class ISiKLaboruntersuchungCRP <ISiKLaboruntersuchung><<(P,#8DA5C4)>>{
+   class ISiKLaboruntersuchungCRP <Observation><<(P,#8DA5C4)>>{
       |_ coding
          |_ loinc : **ObservationCodesCRP**
          |_ snomed : code **55235003**
@@ -112,7 +112,7 @@ namespace ISiK_Labor {
          |_ <s>comparator</s>
    }
 
-   class ISiKLaboruntersuchungGFR <ISiKLaboruntersuchung><<(P,#8DA5C4)>>{
+   class ISiKLaboruntersuchungGFR <Observation><<(P,#8DA5C4)>>{
       |_ coding
          |_ loinc : **ObservationCodesGFR**
          |_ snomed : code **80274001**
@@ -125,7 +125,7 @@ namespace ISiK_Labor {
          |_ <s>comparator</s>
    }
 
-   class ISiKLaboruntersuchungHb <ISiKLaboruntersuchung><<(P,#8DA5C4)>>{
+   class ISiKLaboruntersuchungHb <Observation><<(P,#8DA5C4)>>{
       |_ coding
          |_ loinc : **ObservationCodesHb**
          |_ snomed : code **416125006**
@@ -138,7 +138,7 @@ namespace ISiK_Labor {
          |_ <s>comparator</s>
    }
 
-   class ISiKLaboruntersuchungPCT <ISiKLaboruntersuchung><<(P,#8DA5C4)>>{
+   class ISiKLaboruntersuchungPCT <Observation><<(P,#8DA5C4)>>{
       |_ coding
          |_ loinc : **ObservationCodesPCT**
          |_ snomed : code **418752001**
@@ -151,7 +151,7 @@ namespace ISiK_Labor {
          |_ <s>comparator</s>
    }
 
-   class ISiKLaboruntersuchungSerumkreatinin <ISiKLaboruntersuchung><<(P,#8DA5C4)>>{
+   class ISiKLaboruntersuchungSerumkreatinin <Observation><<(P,#8DA5C4)>>{
      |_ coding
          |_ loinc : **ObservationCodesSerumkreatinin**
          |_ snomed : code **70901006**
@@ -164,7 +164,7 @@ namespace ISiK_Labor {
          |_ <s>comparator</s>
    }
 
-   class ISiKLaboruntersuchungThrombozyten <ISiKLaboruntersuchung><<(P,#8DA5C4)>>{
+   class ISiKLaboruntersuchungThrombozyten <Observation><<(P,#8DA5C4)>>{
       |_ coding
          |_ loinc : **ObservationCodesThrombozyten**
          |_ snomed : code **365632008**
@@ -176,7 +176,7 @@ namespace ISiK_Labor {
       |_ high : **ObservationUnitsThrombozyten**
          |_ <s>comparator</s>     
    }
-   class ISiKLaboruntersuchungTroponin <ISiKLaboruntersuchung><<(P,#8DA5C4)>>{
+   class ISiKLaboruntersuchungTroponin <Observation><<(P,#8DA5C4)>>{
       |_ coding
          |_ loinc : **ObservationCodesTroponin**
          |_ snomed : code **105000003**
@@ -189,7 +189,7 @@ namespace ISiK_Labor {
          |_ <s>comparator</s>     
    }
 
-   class ISiKLaboruntersuchungTSH <ISiKLaboruntersuchung><<(P,#8DA5C4)>>{
+   class ISiKLaboruntersuchungTSH <Observation><<(P,#8DA5C4)>>{
       |_ coding
          |_ loinc : **ObservationCodesTSH**
          |_ snomed : code **61167004**
@@ -367,7 +367,7 @@ namespace ISiK_Labor {
 
 }
 
-namespace R4_Core {
+namespace namespace HL7_FHIR_R4_Core {
    class Foundation_Modul <<(M,#FFAAAA)>>{
       Dokumentation auf HL7 Org
       [[https://hl7.org/fhir/R4/ HL7 FHIR R4 Core Foundation]]
