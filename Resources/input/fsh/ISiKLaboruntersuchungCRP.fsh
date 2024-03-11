@@ -14,8 +14,16 @@ ValueSet: ObservationCodesCRP
 Id: ObservationCodesCRP
 Description: "Enthält LOINC-Codes für die Observation CRP"
 * insert Meta
-* $cs-loinc#1988-5 "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma"
+* $cs-loinc#71426-1 "C-reaktives Protein [Masse/Volumen] in Blut mittels Hochsensitivitätsmethode"
+* $cs-loinc#30522-7 "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
+* $cs-loinc#78486-0 "C-reaktives Protein [Mol/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
+* $cs-loinc#45062-7 "C-reaktives Protein [Masse/Volumen] in Liquor"
+* $cs-loinc#48421-2 "C-reaktives Protein [Masse/Volumen] in Kapillarblut"
+* $cs-loinc#11039-5 "C-reaktives Protein [Nachweis] in Serum oder Plasma"
 * $cs-loinc#76485-2 "C-reaktives Protein [Mol/Volumen] in Serum oder Plasma"
+* $cs-loinc#16503-5 "C-reaktives Protein [Masse/Volumen] in Körperflüssigkeit"
+* $cs-loinc#1988-5 "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma"
+* $cs-loinc#14634-0 "C-reaktives Protein [Titer] in Serum oder Plasma"
 
 ValueSet: ObservationUnitsCRP
 Id: ObservationUnitsCRP

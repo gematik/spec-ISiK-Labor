@@ -14,8 +14,27 @@ ValueSet: ObservationCodesSerumkreatinin
 Id: ObservationCodesSerumkreatinin
 Description: "Enthält LOINC-Codes für die Observation Serumkreatinin"
 * insert Meta
+* $cs-loinc#39802-4 "Creatinin in Dialyseflüssigkeit/Creatinin in Serum oder Plasma"
+* $cs-loinc#70266-2 "Creatinin in Peritonealflüssigkeit/Creatinin in Serum"
+* $cs-loinc#70264-7 "Creatinin in Pleuraflüssigkeit/Creatinin in Serum"
 * $cs-loinc#2160-0 "Creatinin [Masse/Volumen] in Serum oder Plasma"
 * $cs-loinc#14682-9 "Creatinin [Mol/Volumen] in Serum oder Plasma"
+* $cs-loinc#40248-7 "Creatinin [Masse/Volumen] in Serum oder Plasma --Basislinie"
+* $cs-loinc#40264-4 "Creatinin [Mol/Volumen] in Serum oder Plasma --Basislinie"
+* $cs-loinc#44784-7 "Creatinin [Masse/Volumen] (Maximalwert während der Untersuchung) in Serum oder Plasma"
+* $cs-loinc#11042-9 "Creatinin [Masse/Volumen] in Serum oder Plasma --vor Dialyse"
+* $cs-loinc#51619-5 "Creatinin [Mol/Volumen] in Serum oder Plasma --vor Dialyse"
+* $cs-loinc#40112-5 "Creatinin [Mol/Volumen] in Serum oder Plasma --vor XXX Stimulation"
+* $cs-loinc#11041-1 "Creatinin [Masse/Volumen] in Serum oder Plasma --nach Dialyse"
+* $cs-loinc#72271-0 "Creatinin [Masse/Volumen] in Serum oder Plasma --vor Kontrastmittelgabe"
+* $cs-loinc#77140-2 "Creatinin [Mol/Volumen] in Serum, Plasma oder Blut"
+* $cs-loinc#40116-6 "Creatinin [Mol/Volumen] in Serum oder Plasma --30 Minuten vor XXX Stimulation"
+* $cs-loinc#2164-2 "Creatinin-Clearance renal in 24-Stunden-Urin und Serum oder Plasma"
+* $cs-loinc#40250-3 "Creatinin [Masse/Volumen] in Serum oder Plasma --1 Stunde nach XXX Stimulation"
+* $cs-loinc#40254-5 "Creatinin [Masse/Volumen] in Serum oder Plasma --2,5 Stunden nach XXX Stimulation"
+* $cs-loinc#40252-9 "Creatinin [Masse/Volumen] in Serum oder Plasma --2 Stunden nach XXX Stimulation"
+* $cs-loinc#26752-6 "Creatinin-Clearance renal in 2-Stunden-Urin und Serum oder Plasma"
+* $cs-loinc#40267-7 "Creatinin [Mol/Volumen] in Serum oder Plasma --1,5 Stunden nach XXX Stimulation"
 
 ValueSet: ObservationUnitsSerumkreatinin
 Id: ObservationUnitsSerumkreatinin

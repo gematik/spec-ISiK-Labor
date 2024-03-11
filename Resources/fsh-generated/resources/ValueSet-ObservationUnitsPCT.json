@@ -17,6 +17,10 @@
           {
             "code": "ng/mL",
             "display": "nanogram per milliliter"
+          },
+          {
+            "code": "%",
+            "display": "percent"
           }
         ]
       }

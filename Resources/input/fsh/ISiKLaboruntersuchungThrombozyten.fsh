@@ -14,7 +14,16 @@ ValueSet: ObservationCodesThrombozyten
 Id: ObservationCodesThrombozyten
 Description: "Enthält LOINC-Codes für die Observation Thrombozyten"
 * insert Meta
+* $cs-loinc#13057-5 "Thrombozyten [Einheiten/Volumen] in Dialysat"
 * $cs-loinc#26515-7 "Thrombozyten [#/Volumen] in Blut"
+* $cs-loinc#26516-5 "Thrombozyten [#/Volumen] in Plasma"
+* $cs-loinc#49497-1 "Thrombozyten [#/Volumen] in Blut mittels Schätzung"
+* $cs-loinc#778-1 "Thrombozyten [#/Volumen] in Blut mittels manueller Zählung"
+* $cs-loinc#777-3 "Thrombozyten [#/Volumen] in Blut mittels automatisierter Zählung"
+* $cs-loinc#13056-7 "Thrombozyten [#/Volumen] in Plasma mittels automatisierter Zählung"
+* $cs-loinc#74775-8 "Thrombozyten [#/Volumen] in thrombozytenreichem Plasma mittels automatisierter Zählung"
+* $cs-loinc#74464-9 "Thrombozyten [#/Volumen] in Kapillarblut mittels manueller Zählung"
+* $cs-loinc#40574-6 "Thrombozyten [#/Volumen] in Körperflüssigkeit mittels automatisierter Zählung"
 
 ValueSet: ObservationUnitsThrombozyten
 Id: ObservationUnitsThrombozyten

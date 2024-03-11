@@ -14,8 +14,14 @@ ValueSet: ObservationCodesTroponin
 Id: ObservationCodesTroponin
 Description: "Enthält LOINC-Codes für die Observation Troponin"
 * insert Meta
-* $cs-loinc#42757-5 "Troponin I.kardial [Masse/Volumen] in Blut"
 * $cs-loinc#48425-3 "Troponin T.kardial [Masse/Volumen] in Blut"
+* $cs-loinc#42757-5 "Troponin I.kardial [Masse/Volumen] in Blut"
+* $cs-loinc#6597-9 "Troponin T.kardial [Masse/Volumen] in venösem Blut"
+* $cs-loinc#10839-9 "Troponin I.kardial [Masse/Volumen] in Serum oder Plasma"
+* $cs-loinc#6598-7 "Troponin T.kardial [Masse/Volumen] in Serum oder Plasma"
+* $cs-loinc#89579-7 "Troponin I.kardial [Masse/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
+* $cs-loinc#67151-1 "Troponin T.kardial [Masse/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
+* $cs-loinc#49563-0 "Troponin I.kardial [Masse/Volumen] in Serum oder Plasma mittels Nachweisgrenze <= 0,01 ng/mL"
 
 ValueSet: ObservationUnitsTroponin
 Id: ObservationUnitsTroponin
