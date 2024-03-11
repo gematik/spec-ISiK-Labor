@@ -140,8 +140,8 @@ ValueSet: ObservationUnitsHb
 Id: ObservationUnitsHb
 Description: "Enthält UCUM-Einheiten für die Observation Hb"
 * insert Meta
-* $cs-ucum#mg/dL "gram per deciliter"
-* $cs-ucum#umol/L "millimol per liter"
+* $cs-ucum#g/dL "gram per deciliter"
+* $cs-ucum#mmol/L "millimol per liter"
 
 Instance: ExampleISiKLaboruntersuchungHb1
 InstanceOf: ISiKLaboruntersuchungHb
