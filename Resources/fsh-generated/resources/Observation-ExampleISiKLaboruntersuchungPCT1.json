@@ -6,6 +6,29 @@
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungPCT"
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "418752001",
+        "system": "http://snomed.info/sct",
+        "display": "Procalcitonin"
+      },
+      {
+        "code": "33959-8",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 0.2,
@@ -23,13 +46,5 @@
   "status": "final",
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
-  },
-  "code": {
-    "coding": [
-      {
-        "code": "33959-8",
-        "system": "http://loinc.org"
-      }
-    ]
   }
 }

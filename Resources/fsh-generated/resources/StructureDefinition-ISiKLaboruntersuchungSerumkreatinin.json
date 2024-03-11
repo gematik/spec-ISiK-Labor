@@ -50,11 +50,21 @@
   "differential": {
     "element": [
       {
-        "id": "Observation.code",
-        "path": "Observation.code",
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
         "binding": {
           "strength": "required",
           "valueSet": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesSerumkreatinin"
+        }
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
+        "patternCoding": {
+          "code": "70901006",
+          "system": "http://snomed.info/sct"
         }
       },
       {

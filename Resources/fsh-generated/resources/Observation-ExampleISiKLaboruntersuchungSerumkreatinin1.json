@@ -6,6 +6,29 @@
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungSerumkreatinin"
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "70901006",
+        "system": "http://snomed.info/sct",
+        "display": "Creatinine measurement"
+      },
+      {
+        "code": "2160-0",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 0.7,
@@ -39,13 +62,5 @@
   "status": "final",
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
-  },
-  "code": {
-    "coding": [
-      {
-        "code": "2160-0",
-        "system": "http://loinc.org"
-      }
-    ]
   }
 }

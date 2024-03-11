@@ -7,17 +7,23 @@ Description: "Dieses Profil ermöglicht die Abbildung von Informationen zur Labo
   * ^short = "eindeutige ID der Ressource auf dem Server"
 * status MS
   * ^short = "Status der Laboruntersuchung"
-* category MS
+* category 1.. MS
   * ^short = "Kategorie der Laboruntersuchung"
 * category = ObservationCategoryCodes#laboratory 
 * code MS
-  * ^short = "Gegenstand der Untersuchung (Laborparameter)"
-* code from $vs-observation-codes (required)
+  * ^short = "Gegenstand der Untersuchung (Laborparameter)"  
+  * coding
+    * ^slicing.discriminator.type = #pattern
+    * ^slicing.discriminator.path = "$this"
+    * ^slicing.rules = #open
   * coding 1.. MS
     * system 1.. MS
     * code 1.. MS
     * display MS
   * text MS
+  * coding contains loinc 1.. MS and snomed 1..1
+  * coding[loinc] from $vs-observation-codes
+  * coding[snomed] ^patternCoding.system = $sct
 * subject 1.. MS
   * ^short = "Referenz auf den Patienten"
 * encounter MS

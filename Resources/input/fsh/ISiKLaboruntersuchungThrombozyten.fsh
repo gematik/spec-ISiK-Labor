@@ -3,11 +3,12 @@ Parent: ISiKLaboruntersuchung
 Id: ISiKLaboruntersuchungThrombozyten
 Description: "Dieses Profil ermöglicht die Abbildung der Laboruntersuchung Thrombozyten eines Patienten in ISiK Szenarien."
 * insert Meta
-* code from ObservationCodesThrombozyten (required)
-* valueQuantity from ObservationUnitsThrombozyten (required)
+* code.coding[loinc] from ObservationCodesThrombozyten
+* code.coding[snomed] = $sct#365632008
+* valueQuantity from ObservationUnitsThrombozyten
 * referenceRange MS
-  * low from ObservationUnitsThrombozyten (required)
-  * high from ObservationUnitsThrombozyten (required)
+  * low from ObservationUnitsThrombozyten
+  * high from ObservationUnitsThrombozyten
 
 ValueSet: ObservationCodesThrombozyten
 Id: ObservationCodesThrombozyten
@@ -35,7 +36,8 @@ InstanceOf: ISiKLaboruntersuchungThrombozyten
 Usage: #example
 * status = #final
 * subject.reference = "Patient/PatientinMusterfrau"
-* code = $cs-loinc#26515-7
+* code.coding[loinc] = $cs-loinc#26515-7
+* code.coding[snomed] = $sct#365632008 "Platelet count - finding"
 * valueQuantity = 178 $cs-ucum#10*3/uL
 * referenceRange
   * low = 150 $cs-ucum#10*3/uL

@@ -6,6 +6,29 @@
       "https://gematik.de/fhir/isik/StructureDefinition/ISiKLaboruntersuchungHb"
     ]
   },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://hl7.org/fhir/secondary-finding"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "416125006",
+        "system": "http://snomed.info/sct",
+        "display": "Concentration of hemoglobin in erythrocyte"
+      },
+      {
+        "code": "718-7",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
     "value": 11.4,
@@ -39,13 +62,5 @@
   "status": "final",
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
-  },
-  "code": {
-    "coding": [
-      {
-        "code": "718-7",
-        "system": "http://loinc.org"
-      }
-    ]
   }
 }
