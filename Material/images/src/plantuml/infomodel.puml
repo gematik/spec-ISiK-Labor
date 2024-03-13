@@ -22,7 +22,7 @@
 ' TODO:
 ' Vervollständigen im Sinne  von: https://github.com/gematik/spec-ISiK-Medikation/blob/rc/main-stufe-4/Material/docs/Medikation%20Abgleich%20bestehende%20Spezifikationen.xlsx
 
-@startuml resourcediagram
+@startuml infomodel
 'verhindere Probleme mit gewinkelten Krähenfüßen
 'skinparam linetype ortho
 
@@ -35,70 +35,29 @@ set separator none
 'ISiK_Medikation.ISiKMedikationTransaction --> R4_Core.Bundle
 'ISiK_Medikation.ISiKMedikationTransactionResponse --|> R4_Core.Bundle
 
-namespace ISiK_Labor {
-   class  ISiKLaboruntersuchung <Observation><<(P,#8DA5C4)>>{
-      id
-      status : **ObservationStatus*
-      category : **ObservationCategoryCodes**
-      code : **LOINCCodes**
-      |_ coding
-         |_ (All Slices)			
-            |_ system
-            |_ code
-            |_ display
-         |_ loinc : **LOINCCodes**
-      |_ text
-      subject : Reference ( **Patient** | Group | Device | Location)
-      encounter : Reference ( **Encounter** )
-      effective[x]
-      |_ effectiveDateTime
-      issued
-      value[x]
-      |_ valueQuantity
-         |_ value
-         |_ unit
-         |_ system : http://unitsofmeasure.org
+
+class  ISiKLaboruntersuchung <Observation><<(P,#8DA5C4)>>{
+   Dokumentation auf Simplifier 
+   [[https://simplifier.net/isik-labor-v4/isiklaboruntersuchung ISiK Laboruntersuchung]]
+   ---
+   code : **LOINCCodes**
+   |_ coding
+      |_ (All Slices)			
+         |_ system
          |_ code
-      dataAbsentReason
-      interpretation : **ObservationInterpretationCodes**
-      note
-      method : **ObservationMethods**
-      specimen : Reference (Specimen)
-      |_ reference
-      |_ identifier
-         |_ system : http://www.acme.com/identifiers/patient
-         |_ value
-      device : Reference ( Device | DeviceMetric )
-      referenceRange
-      |_ low
-         |_ value
-         |_ unit
-         |_ system : http://unitsofmeasure.org
-         |_ code
-      |_ high
-         |_ value
-         |_ unit
-         |_ system : http://unitsofmeasure.org
-         |_ code      
-      |_ type : **ObservationReferenceRangeMeaningCodes**
-         |_ coding
-            |_ system
-            |_ code
-            |_ display
-         |_ text
-      |_ appliesTo
-         |_ coding
-            |_ system
-            |_ code
-            |_ display
-         |_ text
-      |_ age
-         |_ low
-         |_ high
-      |_ text
-   }
+         |_ display
+      |_ loinc : **LOINCCodes**
+   . . .
+   value[x]
+   |_ valueQuantity
+      |_ value
+      |_ unit
+      |_ system : http://unitsofmeasure.org
+   . . .
+}
    'ISiKMedikation::itemReference --> ISiKMedikation
 
+together ISiK_LaborChilds {
    class ISiKLaboruntersuchungCRP <Observation><<(P,#8DA5C4)>>{
       |_ coding
          |_ loinc : **ObservationCodesCRP**
@@ -181,12 +140,7 @@ namespace ISiK_Labor {
          |_ loinc : **ObservationCodesTroponin**
          |_ snomed : code **105000003**
       value[x]
-      |_ valueQuantity : **ObservationUnitsTroponin**
-      referenceRange
-      |_ low : **ObservationUnitsTroponin**
-         |_ <s>comparator</s>
-      |_ high : **ObservationUnitsTroponin**
-         |_ <s>comparator</s>     
+      |_ valueQuantity : **ObservationUnitsTroponin**   
    }
 
    class ISiKLaboruntersuchungTSH <Observation><<(P,#8DA5C4)>>{
@@ -194,35 +148,15 @@ namespace ISiK_Labor {
          |_ loinc : **ObservationCodesTSH**
          |_ snomed : code **61167004**
       value[x]
-      |_ valueQuantity : **ObservationUnitsTSH**
-      referenceRange
-      |_ low : **ObservationUnitsTSH**
-         |_ <s>comparator</s>
-      |_ high : **ObservationUnitsTSH**
-         |_ <s>comparator</s>   
+      |_ valueQuantity : **ObservationUnitsTSH** 
    }
-
-   namespace Observations_Codes {
-      class ObservationCodesCRP <ValueSet><<(V,#8DA5C4)>>{
-         Dokumentation auf Simplifier 
-         [[https://simplifier.net/isik-labor-v4/observationcodescrp Observation Codes CRP]]
-         Includes codes from the code System
-         [[http://loinc.org LOINC]]
-         --
-         **1988-5** displays-as **C-reaktives Protein** \n**[Masse/Volumen] in Serum oder Plasma**
-         **76485-2** displays-as **C-reaktives Protein** \n**[Mol/Volumen] in Serum oder Plasma**
-      }
-
+}
+   'together Observations_Codes {
       class ObservationCodesGFR <ValueSet><<(V,#8DA5C4)>>{
          Dokumentation auf Simplifier 
          [[https://simplifier.net/isik-labor-v4/observationcodesgfr Observation Codes GFR]]
          Includes various codes from the code System
          [[http://loinc.org LOINC]]
-         --
-         **98980-6**
-         **98979-8**
-         **94677-2**
-         . . .
       }
 
       class ObservationCodesHb <ValueSet><<(V,#8DA5C4)>>{
@@ -230,9 +164,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationcodeshb Observation Codes Hb]]
          Includes codes from the code System
          [[http://loinc.org LOINC]]
-         --
-         **718-7** displays-as **Hämoglobin** \n**[Masse/Volumen] in Blut**
-         **59260-0** displays-as **Hämoglobin** \n**[Mol/Volumen] in Blut**
       }
 
       class ObservationCodesPCT <ValueSet><<(V,#8DA5C4)>>{
@@ -240,8 +171,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationcodespct Observation Codes PCT]]
          Includes codes from the code System
          [[http://loinc.org LOINC]]
-         --
-         **33959-8** displays-as **Procalcitonin** \n**[Masse/Volumen] in Serum oder Plasma**
       }
 
       class ObservationCodesSerumkreatinin <ValueSet><<(V,#8DA5C4)>>{
@@ -249,9 +178,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationcodesserumkreatinin Observation Codes Serumkreatinin]]
          Includes various codes from the code System
          [[http://loinc.org LOINC]]
-         --
-         **2160-0** displays-as **Creatinin** \n**[Masse/Volumen] in Serum oder Plasma**
-         **14682-9** displays-as **Creatinin** \n**[Mol/Volumen] in Serum oder Plasma**
       }
 
       class ObservationCodesThrombozyten <ValueSet><<(V,#8DA5C4)>>{
@@ -259,9 +185,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationcodesthrombozyten Observation Codes Thrombozyten]]
          Includes various codes from the code System
          [[http://loinc.org LOINC]]
-         --
-         **26515-7** displays-as **Thrombozyten** \n**[#/Volumen] in Blut**
-         ...
       }
 
       class ObservationCodesTroponin <ValueSet><<(V,#8DA5C4)>>{
@@ -269,9 +192,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationcodestroponin Observation Codes Troponin]]
          Includes various codes from the code System
          [[http://loinc.org LOINC]]
-         --
-         **42757-5** displays-as **Troponin I.kardial** \n**[Masse/Volumen] in Blut*
-         ...
       }
 
       class ObservationCodesTSH <ValueSet><<(V,#8DA5C4)>>{
@@ -279,31 +199,29 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationcodestsh Observation Codes TSH]]
          Includes various codes from the code System
          [[http://loinc.org LOINC]]
-         --
-         **3015-5** displays-as **Thyreotropin** \n**[Einheiten/Volumen] in Blut*
-         ...
       }
 
-   }
+   
 
-   namespace Observations_Units {
+   'together Observations_Units {
       class ObservationUnitsCRP <ValueSet><<(V,#8DA5C4)>>{
          Dokumentation auf Simplifier 
          [[https://simplifier.net/isik-labor-v4/observationunitscrp Observation Units CRP]]
          Includes codes from the code System
          [[http://unitsofmeasure.org UCUM]]
-         --
-         **mg/L** displays-as **milligram per liter**
-         **nmol/L** displays-as **nanomol per liter**
       }
-
+      class ObservationCodesCRP <ValueSet><<(V,#8DA5C4)>>{
+         Dokumentation auf Simplifier 
+         [[https://simplifier.net/isik-labor-v4/observationcodescrp Observation Codes CRP]]
+         Includes codes from the code System
+         [[http://loinc.org LOINC]]
+      }
+   
       class ObservationUnitsGFR <ValueSet><<(V,#8DA5C4)>>{
          Dokumentation auf Simplifier 
          [[https://simplifier.net/isik-labor-v4/observationunitsgfr Observation Units GFR]]
          Includes codes from the code System
          [[http://unitsofmeasure.org UCUM]]
-         --
-         **mL/min/{1.73_m2}** displays-as **milliliter pro** \n**Minute pro Körperoberfläche von 1,73 m2**
       }
 
       class ObservationUnitsHb <ValueSet><<(V,#8DA5C4)>>{
@@ -311,9 +229,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationunitshb Observation Units Hb]]
          Includes codes from the code System
          [[http://unitsofmeasure.org UCUM]]
-         --
-         **g/dL** displays-as **gram per deciliter**
-         **mmol/L** displays-as **millimol per liter**
       }
 
       class ObservationUnitsPCT <ValueSet><<(V,#8DA5C4)>>{
@@ -321,8 +236,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationunitspct Observation Units PCT]]
          Includes codes from the code System
          [[http://unitsofmeasure.org UCUM]]
-         --
-         **ng/mL** displays-as **nanogram per milliliter**
       }
 
       class ObservationUnitsSerumkreatinin <ValueSet><<(V,#8DA5C4)>>{
@@ -330,9 +243,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationunitsserumkreatinin Observation Units Serumkreatinin]]
          Includes codes from the code System
          [[http://unitsofmeasure.org UCUM]]
-         --
-         **mg/dL** displays-as **milligram per deciliter**
-         **umol/L** displays-as **micromol per liter**
       }
 
       class ObservationUnitsThrombozyten <ValueSet><<(V,#8DA5C4)>>{
@@ -340,8 +250,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationunitsthrombozyten Observation Units Thrombozyten]]
          Includes codes from the code System
          [[http://unitsofmeasure.org UCUM]]
-         --
-         **10*3/uL** displays-as **10^3 per microliter**
       }
 
       class ObservationUnitsTroponin <ValueSet><<(V,#8DA5C4)>>{
@@ -349,9 +257,6 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationunitstroponin Observation Units Troponin]]
          Includes codes from the code System
          [[http://unitsofmeasure.org UCUM]]
-         --
-         **ng/mL** displays-as **nanogram per milliliter**
-         **ug/L** displays-as **microgram per liter**
       }
 
       class ObservationUnitsTSH <ValueSet><<(V,#8DA5C4)>>{
@@ -359,19 +264,10 @@ namespace ISiK_Labor {
          [[https://simplifier.net/isik-labor-v4/observationunitstsh Observation Units TSH]]
          Includes codes from the code System
          [[http://unitsofmeasure.org UCUM]]
-         --
-         **m[IU]/L** displays-as **milli IU per liter**
-         **u[IU]/mL** displays-as **micro IU per milliliter**
       }
-   }
+   
 
-}
-
-namespace HL7_FHIR_R4_Core {
-   class Foundation_Modul <<(M,#FFAAAA)>>{
-      Dokumentation auf HL7 Org
-      [[https://hl7.org/fhir/R4/ HL7 FHIR R4 Core Foundation]]
-   }
+together HL7_FHIR_R4_Core {
    class LOINCCodes <ValueSet><<(V,#8DA5C4)>>{
       Dokumentation auf HL7 Org 
       [[http://hl7.org/fhir/ValueSet/observation-codes Observation Codes]]
@@ -404,10 +300,6 @@ namespace HL7_FHIR_R4_Core {
       [[http://hl7.org/fhir/ValueSet/observation-methods Observation Methods]]
       Includes codes from the underlying code system 
       [[http://snomed.info/sct SNOMED CT]] where the \nconcept is Technique, Action or Patient evaluation procedure.
-      --
-      codes : **$CS-SCT** is-a **[[http://snomed.info/id/72394005 272394005]]**
-      codes : **$CS-SCT** is-a **[[http://snomed.info/id/129264002 129264002]]**
-      codes : **$CS-SCT** is-a **[[http://snomed.info/id/386053000 386053000]]**
    }
 
    class ObservationInterpretationCodes <ValueSet><<(V,#8DA5C4)>>{
@@ -420,11 +312,7 @@ namespace HL7_FHIR_R4_Core {
 }
 
 
-namespace ISiK_Basis {
-   class Basismodul_Stufe_4 <<(M,#FFDC36)>>{
-      Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-basis-v4/~introduction ISiK Basis Stufe 4]]
-   }
+together ISiK_Basis {
    class ISiKPatient <Patient><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
       [[https://simplifier.net/isik-basis-v4/isikpatient ISiK Patient]]
@@ -435,11 +323,7 @@ namespace ISiK_Basis {
    }  
 }
 
-namespace ISiK_Medikation {
-   class Medikation_Stufe_4 <<(M,#FFDC36)>>{
-      Dokumentation auf Simplifier 
-      [[https://simplifier.net/isik-medikation-v4 ISiK Medikation Stufe 4]]
-   }
+together ISiK_Medikation {
    class  ISiKMedikament <Medication><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
       [[https://simplifier.net/isik-medikation-v4/isikmedikament ISiK Medikament]]
@@ -453,7 +337,59 @@ namespace ISiK_Medikation {
    class ISiKAMTSBewertung <RiskAssessment><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
       [[https://simplifier.net/isik-medikation-v4/isikmedikament ISiK AMTS Bewertung]]
-   }
-   
+   }  
 }
+
+
+
+'Relations
+
+'diamonds
+together {
+<> MultiRef_PracPatRel
+MultiRef_PracPatRel -- ISiKPractitioner
+MultiRef_PracPatRel -- ISiKPatient
+MultiRef_PracPatRel -- ISiKAngehoeriger
+<> MultiRef_KDLXDS
+MultiRef_KDLXDS -- vsKDL
+MultiRef_KDLXDS -- IHEXDStypeCode
+}
+
+
+'Specific Observations inherit from generic obseration
+ISiKLaboruntersuchung --|> ISiKLaboruntersuchungCRP
+ISiKLaboruntersuchung --|> ISiKLaboruntersuchungGFR
+ISiKLaboruntersuchung --|> ISiKLaboruntersuchungHb
+ISiKLaboruntersuchung --|> ISiKLaboruntersuchungPCT
+ISiKLaboruntersuchung --|> ISiKLaboruntersuchungSerumkreatinin
+ISiKLaboruntersuchung --|> ISiKLaboruntersuchungThrombozyten
+ISiKLaboruntersuchung --|> ISiKLaboruntersuchungTroponin
+ISiKLaboruntersuchung --|> ISiKLaboruntersuchungTSH
+
+'Observations to ValuesSets
+ISiKLaboruntersuchungCRP::coding .down.> "  1..1  " ObservationCodesCRP
+ISiKLaboruntersuchungCRP::valueQuantity  ..down. ObservationUnitsCRP
+
+ISiKLaboruntersuchungGFR::coding .down.> "  1..1  " ObservationCodesGFR
+ISiKLaboruntersuchungGFR::valueQuantity  ..down. ObservationUnitsGFR
+
+ISiKLaboruntersuchungHb::coding .down.> "  1..1  " ObservationCodesHb
+ISiKLaboruntersuchungHb::valueQuantity  ..down. ObservationUnitsHb
+
+ISiKLaboruntersuchungPCT::coding .down.> "  1..1  " ObservationCodesPCT
+ISiKLaboruntersuchungPCT::valueQuantity  ..down. ObservationUnitsPCT
+
+
+ISiKDokumentenMetadaten::type -- "  1..1  " MultiRef_KDLXDS
+ISiKDokumentenMetadaten::category -- "  0..1  " IHEXDSclassCode
+
+ISiKDokumentenMetadaten::subject --> "  1..1  " ISiKPatient
+ISiKDokumentenMetadaten::author <--> "  0..1  " MultiRef_PracPatRel
+ISiKDokumentenMetadaten::securityLabel -up- "  1..*  "ISiKConfidentialityCodes  
+ISiKDokumentenMetadaten::content -- "  1..1  " IHEXDSformatCodeDE
+ISiKDokumentenMetadaten::encounter -- "  0..1  " ISiKKontaktGesundheitseinrichtung
+ISiKDokumentenMetadaten::context -- "  1..1  " IHEXDSeventCodeList
+ISiKDokumentenMetadaten::context -- "  1..1  " IHEXDShealthcareFacilityTypeCode
+ISiKDokumentenMetadaten::context -- "  1..1  " IHEXDSpracticeSettingCode
+
 @enduml
