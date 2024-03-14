@@ -19,9 +19,6 @@
 @enduml
 
 
-' TODO:
-' Vervollständigen im Sinne  von: https://github.com/gematik/spec-ISiK-Medikation/blob/rc/main-stufe-4/Material/docs/Medikation%20Abgleich%20bestehende%20Spezifikationen.xlsx
-
 @startuml infomodel
 'verhindere Probleme mit gewinkelten Krähenfüßen
 'skinparam linetype ortho
@@ -57,7 +54,8 @@ class  ISiKLaboruntersuchung <Observation><<(P,#8DA5C4)>>{
 }
    'ISiKMedikation::itemReference --> ISiKMedikation
 
-together ISiK_LaborChilds {
+'observations childs
+together {
 
    class ISiKLaboruntersuchungCRP <Observation><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
@@ -155,6 +153,7 @@ together ISiK_LaborChilds {
       . . .      
    }
 }
+
    'together Observations_Codes {
       class ObservationCodesGFR <ValueSet><<(V,#8DA5C4)>>{
          Dokumentation auf Simplifier 
@@ -298,7 +297,8 @@ together ISiK_LaborChilds {
    }
 '}
 
-together ISiK_Medikation {
+'Medikation related
+together {
    class  ISiKMedikationsVerabreichung <Medication><<(P,#8DA5C4)>>{
       Dokumentation auf Simplifier 
       [[https://simplifier.net/isik-medikation-v4/isikmedikationsverabreichung ISiK MedikationsVerabreichung]]

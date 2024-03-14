@@ -3,7 +3,7 @@
   "url": "https://gematik.de/fhir/ISiK/ImplementationGuide/ISiK-Labor",
   "name": "Implementierungsleitfaden ISiK-Modul Labor",
   "status": "active",
-  "version": "4.0.0",
+  "version": "4.0.0-rc",
   "fhirVersion": [
     "4.0.1"
   ],

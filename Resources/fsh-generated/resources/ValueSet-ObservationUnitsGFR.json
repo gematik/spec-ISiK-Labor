@@ -5,9 +5,9 @@
   "id": "ObservationUnitsGFR",
   "description": "Enthält UCUM-Einheiten für die Observation GFR",
   "url": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsGFR",
+  "version": "4.0.0-rc",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "version": "4.0.0",
   "date": "2024-02-23",
   "compose": {
     "include": [

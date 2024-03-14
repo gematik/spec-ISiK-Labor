@@ -36,8 +36,9 @@ jobs:
       
       # Download plantUML jar 
       - name: Download plantuml file
-        run: |
-          wget -O plantuml.jar "https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar" 
+      #  run: wget -O plantuml.jar "https://github.com/plantuml/plantuml/releases/download/v1.2024.2/plantuml.jar" 
+        run: wget -O plantuml.jar "https://github.com/plantuml/plantuml/releases/latest/download/plantuml.jar" 
+        
                                 
        # Ensure Folder exsists, otherwise, create it
       - name: Ensure and clean folder

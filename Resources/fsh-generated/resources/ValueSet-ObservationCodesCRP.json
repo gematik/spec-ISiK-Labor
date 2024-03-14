@@ -5,9 +5,9 @@
   "id": "ObservationCodesCRP",
   "description": "Enthält LOINC-Codes für die Observation CRP",
   "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesCRP",
+  "version": "4.0.0-rc",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "version": "4.0.0",
   "date": "2024-02-23",
   "compose": {
     "include": [

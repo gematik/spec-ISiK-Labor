@@ -5,9 +5,9 @@
   "id": "ObservationUnitsHb",
   "description": "Enthält UCUM-Einheiten für die Observation Hb",
   "url": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsHb",
+  "version": "4.0.0-rc",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "version": "4.0.0",
   "date": "2024-02-23",
   "compose": {
     "include": [
@@ -15,11 +15,11 @@
         "system": "http://unitsofmeasure.org",
         "concept": [
           {
-            "code": "mg/dL",
+            "code": "g/dL",
             "display": "gram per deciliter"
           },
           {
-            "code": "umol/L",
+            "code": "mmol/L",
             "display": "millimol per liter"
           }
         ]
