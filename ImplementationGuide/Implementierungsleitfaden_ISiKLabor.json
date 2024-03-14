@@ -37,13 +37,13 @@
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/InteraktionenUndSearchTypes.md",
-              "title": "Interaktionen Und SearchTypes",
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/Informationsmodell.md",
+              "title": "Ressourcen- und Informationsmodell",
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/Informationsmodell.md",
-              "title": "Informationsmodell",
+              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/InteraktionenUndSearchTypes.md",
+              "title": "Interaktionen Und SearchTypes",
               "generation": "markdown"
             }
           ]
