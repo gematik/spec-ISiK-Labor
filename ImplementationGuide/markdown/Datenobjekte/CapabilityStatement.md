@@ -1,27 +1,8 @@
 ## Konformitätserklärung [(CapabilityStatement)](https://hl7.org/fhir/R4/capabilitystatement.html)
 
-Jede Instanz eines bestätigungsrelevanten Systems MUSS an ihrem Endpunkt eine [CapabilityStatement](https://hl7.org/fhir/R4/capabilitystatement.html)-Ressource bereitstellen.
+Da das Modul Labor zum aktuellen Zeitpunkt ausschließlich den Status eine Support Moduls hat, gibt es kein Capability Statement und keine eigenständiges Bestätigungsverfahren dazu.
+Das Support Modul Labor ist aktuell eine Unterstützung - die thematische Heimat für Laboruntersuchungen - für die Übergreifenden Use Cases [AMTS](https://simplifier.net/guide/isik-medikation-v4/ImplementationGuide-markdown-UebergreifendeUseCases-AMTS) und [Intensiversorgung](https://simplifier.net/guide/isik-vitalparameter-v4/ImplementationGuide-markdown-UebergreifendeUseCases-Intensivversorgung).
 
-Hierzu MUSS die [capabilities-Interaktion gemäß FHIR-Spezifikation](https://hl7.org/fhir/R4/http.html#capabilities) unterstützt werden.
-Der MODE-Parameter kann ignoriert werden.
-
-Die CapabilityStatements in dieser Spezifikation stellen die Anforderungen seitens der gematik für den jeweiligen Bereich dieser Spezifikation dar. (`kind` = "requirements"). Zur Unterscheidung von Anforderungen, die erfüllt werden MÜSSEN gegenüber jenen, die erfüllt werden KÖNNEN, wird die [CapabilityStatement-Expectation](https://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)-Extension mit den möglichen Werten "SHALL" (=MUSS) und "MAY" (=KANN) verwendet.
-
-Eine Server-Instanz MUSS ihrerseits ein CapabilityStatement vom `kind`= "instance" liefern und im Element `software` den Namen und die Versionsnummer angeben.
-
-Darüber hinaus MUSS in 'CapabilityStatement.instantiates' die Canonical URL des nachfolgenden CapabilityStatement in der jeweiligen CapabilityStatement Instanz angegeben werden.
-
-Das CapabilityStatement der Instanz MUSS alle Funktionalitäten auflisten, die in dem folgenden, für den zu bestätigenden Bereich relevanten, CapabilityStatement mit "SHALL" gekennzeichnet sind. Das CapabilityStatement KANN darüber hinaus die mit "MAY" gekennzeichneten Funktionalitäten, sowie weitere Funktionalitäten auflisten, sofern diese in der Instanz implementiert wurden.
-
-Implementiert ein System mehr als einen der drei Bereiche dieser Spezifikation, so MUSS dessen CapabilityStatement die Vereinigung der Funktionalitäten der betreffenden CapabilityStatements dieses Implementierungsleitfadens enthalten. Bei gleichartigen Elementen mit unterschiedlicher Anforderungsstärke (expectation) MUSS die stärkere Anforderung umgesetzt werden ("SHALL" gilt vor "MAY"). Ebenso MÜSSEN in diesem Fall die Canonical URLs der CapabilityStatements aller unten genannter implementierter Bereiche in 'CapabilityStatement.instantiates' angegeben werden.
-
-Die Verwendung der [CapabilityStatement-Expectation](https://hl7.org/fhir/R4/extension-capabilitystatement-expectation.html)-Extension ist im CapabilityStatement der Server-Instanz nicht erforderlich.
-
-Die für dieses Modul bestätigungsrelevanten Teile des [Moduls "Basis"](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Einfuehrung?version=current) sind in den CapabilityStatements ebenfalls enthalten.
-
-
-<!-- ### CapabilityStatement (Requirement) ISiK-Medikation - Bereich Medikationsinformation
-<!-- 
-<!--  Canonical: https://gematik.de/fhir/isik/Medikation/CapabilityStatement/medikation-server/information
-<!--   
-<!--   {{render:https://gematik.de/fhir/isik/v/Medikation/CapabilityStatement/medikation-server/information}}
+Gegebenenfalls sind daher die Capability Statements für diese entsprechenden Use Cases in den tragenden Modulen zu beachten:
+- Das [CapabilityStatement AMTS Server](https://simplifier.net/guide/isik-medikation-v4/ImplementationGuide-markdown-Datenobjekte-CapabilityStatement) im Modul Medikation.
+- Das [CapabilityStatement Intensivversorgung Server](https://simplifier.net/guide/isik-vitalparameter-v4/ImplementationGuide-markdown-CapabilityStatement) im Modul Vitalparameter und Körpermaße.
