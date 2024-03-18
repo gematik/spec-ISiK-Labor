@@ -1,5 +1,5 @@
 # Übergreifende Use Cases
 
-In diesem Modul werden folgende Datenobjekt-übergreifende Use Cases definiert:
+In diesem Modul werden Datenobjekte für folgende übergreifende Use Cases definiert:
 
 {{index:current}}
