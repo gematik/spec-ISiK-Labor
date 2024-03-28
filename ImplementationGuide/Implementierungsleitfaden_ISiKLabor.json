@@ -1,8 +1,8 @@
 {
   "resourceType": "ImplementationGuide",
-  "url": "https://gematik.de/fhir/ISiK/ImplementationGuide/ISiK-Labor",
-  "name": "Implementierungsleitfaden ISiK-Modul Labor",
-  "status": "active",
+  "url": "https://gematik.de/fhir/isik/ImplementationGuide/ISiK-Labor",
+  "name": "Implementierungsleitfaden ISiK-Labor",
+  "status": "draft",
   "version": "4.0.0-rc",
   "fhirVersion": [
     "4.0.1"
