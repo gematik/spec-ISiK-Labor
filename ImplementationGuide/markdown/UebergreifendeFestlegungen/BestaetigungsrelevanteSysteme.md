@@ -4,10 +4,7 @@ Hier folgt die Festlegung der Deutschen Krankenhausgesellschaft e. V. wie [hier]
 
 ## Festlegung der Deutschen Krankenhausgesellschaft e. V. aus dem Jahr 2022
 
-Die im Folgenden definierten Subsysteme müssen gemäß § 373 Abs. 2 SGB V nach
-zweijähriger Übergangsfrist im Krankenhaus um die Schnittstelle erweitert sein, die
-das ISIK-Modul bzw. die Datenobjekte der gematik jeweils beschreiben. Die Festlegung der Systeme zu den einzelnen ISiK-Modulen ist um Erläuterungen in eckigen
-Klammern ergänzt.
+Die im Folgenden definierten Subsysteme müssen gemäß § 373 Abs. 2 SGB V nach zweijähriger Übergangsfrist im Krankenhaus um die Schnittstelle erweitert sein, die das ISIK-Modul bzw. die Datenobjekte der gematik jeweils beschreiben. Die Festlegung der Systeme zu den einzelnen ISiK-Modulen ist um Erläuterungen in eckigen Klammern ergänzt.
 
 ISiK-Basismodul (Stufe 1 und Stufe 2)
 - Krankenhaus-Informationssystem (KIS)
