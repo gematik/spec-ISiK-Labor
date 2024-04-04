@@ -93,6 +93,11 @@
           "title": "Datenobjekte",
           "page": [
             {
+              "nameUrl": "ImplementationGuide/markdown/Datenobjekte/Profile_ISiKLaboruntersuchung.md",
+              "title": "Laboruntersuchung",
+              "generation": "markdown"
+            },
+            {
               "nameUrl": "ImplementationGuide/markdown/Datenobjekte/CapabilityStatement.md",
               "title": "Capability Statement",
               "generation": "markdown"

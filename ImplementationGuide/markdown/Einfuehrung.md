@@ -1,9 +1,9 @@
 <img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Labor/main-stufe-4/Material/images/Gematik_Logo_Flag.svg" alt="gematik logo" width="400"/>
 
 ----
-Version: 4.0.0
+Version: 4.0.0-rc
 
-Datum: 01.02.2024
+Datum: 04.04.2024
 
 Status: Aktiv
 
