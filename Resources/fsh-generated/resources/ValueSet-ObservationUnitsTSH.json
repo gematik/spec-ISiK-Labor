@@ -1,6 +1,6 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "ObservationUnitsTSH",
   "id": "ObservationUnitsTSH",
   "description": "Enthält UCUM-Einheiten für die Observation TSH",
@@ -8,7 +8,7 @@
   "version": "4.0.0-rc",
   "experimental": false,
   "publisher": "gematik GmbH",
-  "date": "2024-02-23",
+  "date": "2024-04-04",
   "compose": {
     "include": [
       {
