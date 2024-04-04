@@ -11,6 +11,6 @@ Es sei ausdrücklich darauf hingewiesen, dass im Rahmen der weiteren Entwicklung
 
 Jede Laboruntersuchung wird durch bestimmte [LOINC](https://loinc.org/) oder [SNOMED CT](http://snomed.info/sct) Codes bezeichnet. Der angegebene Wert ist durch genaue Einheitenangaben in [UCUM](http://unitsofmeasure.org) zu konkretitiseren. Zugehörige Codes und Einheiten sind den entsprechenden Valuessets zu entnehmen.
 
-## LABORBEFUND 1.0.0 der MIO42
+## LABORBEFUND 1.0.0 der mio42
 
-Die mio42 GmbH der Kassenärztliche Bundesvereinigung hat ein [MIO Laborbefund](https://mio.kbv.de/display/LAB1X0X0/Laborbefund+1.0.0) erarbeitet, was auch das vorliegende Support Modul inhatlich berührt. Der Stand dazu ist mit April 2023 als "1. Teilveröffentlichung" angegeben.
+Die mio42 GmbH der Kassenärztliche Bundesvereinigung hat einen [MIO Laborbefund](https://mio.kbv.de/display/LAB1X0X0/Laborbefund+1.0.0) erarbeitet, was auch das vorliegende Support Modul inhatlich berührt. Der Stand dazu ist mit April 2023 als "1. Teilveröffentlichung" angegeben.
