@@ -6,13 +6,9 @@ name: CI (FHIR Validation)
 on:
   # Triggers the workflow on push or pull request events but only for the master branch
   push:
-    paths:
-    - 'Resources/**'
-    branches-ignore:
-    - 'main**'
+    branches: [ master ]
   pull_request:
-    branches:
-    - 'main**'
+    branches: [ master ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,12 +24,12 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
         
       # Java and .NET are already installed on ubuntu-latest
         
       - name: Firely.Terminal (GitHub Actions)
-        uses: FirelyTeam/firely-terminal-pipeline@v0.4.1
+        uses: FirelyTeam/firely-terminal-pipeline@v0.3.5
         with:
           PATH_TO_CONFORMANCE_RESOURCES: Resources/fsh-generated/resources/
           #PATH_TO_EXAMPLES: Examples
@@ -46,13 +42,9 @@ jobs:
           SIMPLIFIER_PASSWORD: ${{ secrets.SIMPLIFIER_PASSWORD }}
           SUSHI_ENABLED: true
           SUSHI_OPTIONS: Resources/
-          SUSHI_VERSION: 3.8.0
           EXPECTED_FAILS: VALIDATION_CONFORMANCE_DOTNET VALIDATION_CONFORMANCE_JAVA VALIDATION_EXAMPLES_JAVA
 
       - name: Add & Commit
-        uses: EndBug/add-and-commit@v9
+        uses: EndBug/add-and-commit@v7
         with:
-          committer_name: GitHub Actions Bot
-          committer_email: ActionBot@github.com
           add: 'Resources/fsh-generated/resources/'
-          message: auto-generated FHIR files by GitHub Actions (CI FSH to FHIR Validation)
