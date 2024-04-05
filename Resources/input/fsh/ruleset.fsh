@@ -1,6 +1,6 @@
 RuleSet: Meta
 * ^version = "4.0.0-rc"
-* ^status = #active
+* ^status = #draft
 * ^experimental = false
 * ^publisher = "gematik GmbH"
 * ^date = "2024-02-23"
