@@ -4,6 +4,7 @@ Folgende Datenobjekte aus dem Modul [ISiK Basis Stufe 4](https://simplifier.net/
 * [Patient](https://simplifier.net/guide/isik-basis-v4/ImplementationGuide-markdown-Datenobjekte-Datenobjekte_Patient?version=current)
 
 Falls in einem Anwendungsfall Laborwerte kommuniziert werden, für die in diesem Implementierungsleitfaden kein spezifisches Profil existiert, SOLL hierfür das generische Profil ISiKLaboruntersuchung unter Verwendung geeigneter LOINC-Codes sowie Einheiten verwendet werden. 
+<!---
 
 **TBD**
 
@@ -16,6 +17,7 @@ Falls in einem Anwendungsfall Laborwerte kommuniziert werden, für die in diesem
 - status
 - value-quantity
 
+-->
 
 Die Verwendung in diesem Modul bedeutet:
 Wenn dieses Modul auf Datenobjekte aus dem Basismodul referenziert, dann MÜSSEN die referenzierten FHIR-Ressourcen konform zu den Vorgaben aus dem Basismodul sein.
