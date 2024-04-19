@@ -24,30 +24,24 @@ storage adverseUC as "Adverse Use Case" {
     storage (Verwechslung){
         (Patient)
         (Fall, Kontakt)
-        (Verordnung )
-        (Intensität, Dauer)
+        (Laboruntersuchung)
     }
-    (Mehrfachverordnung)
+    (Fehlverordnung)
     (Informationslücke)
-    (Kontraindikation)
-    (Wechselwirkung)
+    (Kollaps)
 }
 
 storage gnrlUC as "Allgemein" {
     (Information)
-    (Verordnung)
-    (Verabreichung)
-    (Abgabe)
-    (Einstellung)
-    (Rezeptierung)
+    (Laboruntersuchung)
+    (Blutbild)
+    (Hormonspiegel)
+    (Nierenfunktion)
+    (Leberwerte)
+    (Schilddrüsenfunktion)
     storage (AMTS){
         (Prüfung)
         (Reconcillation)
-    }
-    storage (Medikations-Liste){
-        (Zusammenstellen)
-        (Aufteilen)
-        (Verändern)
     }
 }
 

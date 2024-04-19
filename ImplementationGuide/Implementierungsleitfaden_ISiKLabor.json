@@ -23,30 +23,8 @@
       "page": [
         {
           "nameUrl": "ImplementationGuide/markdown/ReleaseNotes.md",
-          "title": "Release Notes",
+          "title": "ReleaseNotes",
           "generation": "markdown"
-        },
-        {
-          "nameUrl": "ImplementationGuide/markdown/Zusammenfassung.md",
-          "title": "Zusammenfassung",
-          "generation": "markdown",
-          "page": [
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/UseCases.md",
-              "title": "Anwendungsfälle (Use Cases)",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/Informationsmodell.md",
-              "title": "Ressourcen- und Informationsmodell",
-              "generation": "markdown"
-            },
-            {
-              "nameUrl": "ImplementationGuide/markdown/Zusammenfassung/InteraktionenUndSearchTypes.md",
-              "title": "Interaktionen Und SearchTypes",
-              "generation": "markdown"
-            }
-          ]
         },
         {
           "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen.md",
@@ -67,21 +45,31 @@
               "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/RestApi.md",
               "title": "REST-API",
               "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UebergreifendeFestlegungen/Suchparameter.md",
+              "title": "Suchparameter",
+              "generation": "markdown"
             }
           ]
         },
         {
-          "nameUrl": "ImplementationGuide/markdown/UebergreifendeUseCases.md",
-          "title": "Übergreifende Use Cases",
+          "nameUrl": "ImplementationGuide/markdown/UseCasesAnwendung.md",
+          "title": "Use Cases",
           "generation": "markdown",
           "page": [
             {
-              "nameUrl": "ImplementationGuide/markdown/UebergreifendeUseCases/AMTS.md",
+              "nameUrl": "ImplementationGuide/markdown/UseCasesAnwendung/UseCases.md",
+              "title": "Anwendungsfälle (Use Cases)",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "ImplementationGuide/markdown/UseCasesAnwendung/AMTS.md",
               "title": "Arzneimitteltherapiesicherheit (AMTS)",
               "generation": "markdown"
             },
             {
-              "nameUrl": "ImplementationGuide/markdown/UebergreifendeUseCases/UeberleitungIntensiv.md",
+              "nameUrl": "ImplementationGuide/markdown/UseCasesAnwendung/UeberleitungIntensiv.md",
               "title": "Überleitung Normal- und Intensivversorgung",
               "generation": "markdown"
             }
