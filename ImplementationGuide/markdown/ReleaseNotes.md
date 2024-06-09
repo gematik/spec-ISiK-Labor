@@ -6,12 +6,17 @@ Die erste Ziffer X bezeichnet ein Major-Release und regelt die Gültigkeit von R
 
 Es handelt sich um ein **Support Modul**, was nicht eigenständig funktionsfähig ist (eigene Use Cases bedient) oder bestätigtigungsrelevant ist.
 
+---
+Version: 4.0.0-rc2
+
+Datum: tbd
+
+- Entfernen von MS von .id der Ressourcen https://github.com/gematik/spec-ISiK-Labor/pull/6
+
 ----
 **Release Candidate zur Kommentierung**
 
-Version: 4.0.0-rc
 
-Datum: 04.04.2024
 
 * Es handelt sich um ein Support Modul, was nicht eigenständig funktionsfähig ist (eigene Use Cases bedient) oder bestätigtigungsrelevant ist
 * ISiKLaboruntersuchung als generisches Profil von Observation
