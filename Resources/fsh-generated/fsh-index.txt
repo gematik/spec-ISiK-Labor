@@ -7,7 +7,7 @@ Observation-ExampleISiKLaboruntersuchungSerumkreatinin1.json  ExampleISiKLaborun
 Observation-ExampleISiKLaboruntersuchungTSH1.json             ExampleISiKLaboruntersuchungTSH1             Instance  ISiKLaboruntersuchungTSH.fsh             64 - 74
 Observation-ExampleISiKLaboruntersuchungThrombozyten1.json    ExampleISiKLaboruntersuchungThrombozyten1    Instance  ISiKLaboruntersuchungThrombozyten.fsh    34 - 44
 Observation-ExampleISiKLaboruntersuchungTroponin1.json        ExampleISiKLaboruntersuchungTroponin1        Instance  ISiKLaboruntersuchungTroponin.fsh        33 - 42
-StructureDefinition-ISiKLaboruntersuchung.json                ISiKLaboruntersuchung                        Profile   ISiKLaboruntersuchung.fsh                1 - 82
+StructureDefinition-ISiKLaboruntersuchung.json                ISiKLaboruntersuchung                        Profile   ISiKLaboruntersuchung.fsh                1 - 80
 StructureDefinition-ISiKLaboruntersuchungCRP.json             ISiKLaboruntersuchungCRP                     Profile   ISiKLaboruntersuchungCRP.fsh             1 - 11
 StructureDefinition-ISiKLaboruntersuchungGFR.json             ISiKLaboruntersuchungGFR                     Profile   ISiKLaboruntersuchungGFR.fsh             1 - 11
 StructureDefinition-ISiKLaboruntersuchungHb.json              ISiKLaboruntersuchungHb                      Profile   ISiKLaboruntersuchungHb.fsh              1 - 11

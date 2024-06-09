@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKLaboruntersuchung.fsh",
     "startLine": 1,
-    "endLine": 82
+    "endLine": 80
   },
   {
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungCRP.json",
