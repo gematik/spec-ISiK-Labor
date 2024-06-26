@@ -3,8 +3,6 @@ Parent: Observation
 Id: ISiKLaboruntersuchung
 Description: "Dieses Profil ermöglicht die Abbildung von Informationen zur Laboruntersuchungen eines Patienten in ISiK Szenarien. Es dient primär als Vorlage, von der spezifische Laboruntersuchungs-Profile abgeleitet werden, kann aber grundsätzlich auch zur Repräsentation von nicht weiter ausspezifizierten Laboruntersuchungen genutzt werden."
 * insert Meta
-* id MS
-  * ^short = "eindeutige ID der Ressource auf dem Server"
 * status MS
   * ^short = "Status der Laboruntersuchung"
 * category 1.. MS
