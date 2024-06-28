@@ -4,8 +4,8 @@
     "fshName": "ExampleISiKLaboruntersuchungCRP1",
     "fshType": "Instance",
     "fshFile": "ISiKLaboruntersuchungCRP.fsh",
-    "startLine": 27,
-    "endLine": 36
+    "startLine": 35,
+    "endLine": 44
   },
   {
     "outputFile": "Observation-ExampleISiKLaboruntersuchungGFR1.json",
@@ -20,48 +20,48 @@
     "fshName": "ExampleISiKLaboruntersuchungHb1",
     "fshType": "Instance",
     "fshFile": "ISiKLaboruntersuchungHb.fsh",
-    "startLine": 27,
-    "endLine": 38
+    "startLine": 146,
+    "endLine": 157
   },
   {
     "outputFile": "Observation-ExampleISiKLaboruntersuchungPCT1.json",
     "fshName": "ExampleISiKLaboruntersuchungPCT1",
     "fshType": "Instance",
     "fshFile": "ISiKLaboruntersuchungPCT.fsh",
-    "startLine": 25,
-    "endLine": 34
+    "startLine": 28,
+    "endLine": 37
   },
   {
     "outputFile": "Observation-ExampleISiKLaboruntersuchungSerumkreatinin1.json",
     "fshName": "ExampleISiKLaboruntersuchungSerumkreatinin1",
     "fshType": "Instance",
     "fshFile": "ISiKLaboruntersuchungSerumkreatinin.fsh",
-    "startLine": 27,
-    "endLine": 38
+    "startLine": 46,
+    "endLine": 57
   },
   {
     "outputFile": "Observation-ExampleISiKLaboruntersuchungTSH1.json",
     "fshName": "ExampleISiKLaboruntersuchungTSH1",
     "fshType": "Instance",
     "fshFile": "ISiKLaboruntersuchungTSH.fsh",
-    "startLine": 26,
-    "endLine": 36
+    "startLine": 64,
+    "endLine": 74
   },
   {
     "outputFile": "Observation-ExampleISiKLaboruntersuchungThrombozyten1.json",
     "fshName": "ExampleISiKLaboruntersuchungThrombozyten1",
     "fshType": "Instance",
     "fshFile": "ISiKLaboruntersuchungThrombozyten.fsh",
-    "startLine": 25,
-    "endLine": 35
+    "startLine": 34,
+    "endLine": 44
   },
   {
     "outputFile": "Observation-ExampleISiKLaboruntersuchungTroponin1.json",
     "fshName": "ExampleISiKLaboruntersuchungTroponin1",
     "fshType": "Instance",
     "fshFile": "ISiKLaboruntersuchungTroponin.fsh",
-    "startLine": 27,
-    "endLine": 36
+    "startLine": 33,
+    "endLine": 42
   },
   {
     "outputFile": "StructureDefinition-ISiKLaboruntersuchung.json",
@@ -69,7 +69,7 @@
     "fshType": "Profile",
     "fshFile": "ISiKLaboruntersuchung.fsh",
     "startLine": 1,
-    "endLine": 82
+    "endLine": 80
   },
   {
     "outputFile": "StructureDefinition-ISiKLaboruntersuchungCRP.json",
@@ -141,7 +141,7 @@
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungCRP.fsh",
     "startLine": 13,
-    "endLine": 18
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-ObservationCodesGFR.json",
@@ -157,7 +157,7 @@
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungHb.fsh",
     "startLine": 13,
-    "endLine": 18
+    "endLine": 137
   },
   {
     "outputFile": "ValueSet-ObservationCodesPCT.json",
@@ -165,7 +165,7 @@
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungPCT.fsh",
     "startLine": 13,
-    "endLine": 17
+    "endLine": 19
   },
   {
     "outputFile": "ValueSet-ObservationCodesSerumkreatinin.json",
@@ -173,7 +173,7 @@
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungSerumkreatinin.fsh",
     "startLine": 13,
-    "endLine": 18
+    "endLine": 37
   },
   {
     "outputFile": "ValueSet-ObservationCodesTSH.json",
@@ -181,7 +181,7 @@
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungTSH.fsh",
     "startLine": 13,
-    "endLine": 17
+    "endLine": 55
   },
   {
     "outputFile": "ValueSet-ObservationCodesThrombozyten.json",
@@ -189,7 +189,7 @@
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungThrombozyten.fsh",
     "startLine": 13,
-    "endLine": 17
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-ObservationCodesTroponin.json",
@@ -197,15 +197,15 @@
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungTroponin.fsh",
     "startLine": 13,
-    "endLine": 18
+    "endLine": 24
   },
   {
     "outputFile": "ValueSet-ObservationUnitsCRP.json",
     "fshName": "ObservationUnitsCRP",
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungCRP.fsh",
-    "startLine": 20,
-    "endLine": 25
+    "startLine": 28,
+    "endLine": 33
   },
   {
     "outputFile": "ValueSet-ObservationUnitsGFR.json",
@@ -220,47 +220,47 @@
     "fshName": "ObservationUnitsHb",
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungHb.fsh",
-    "startLine": 20,
-    "endLine": 25
+    "startLine": 139,
+    "endLine": 144
   },
   {
     "outputFile": "ValueSet-ObservationUnitsPCT.json",
     "fshName": "ObservationUnitsPCT",
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungPCT.fsh",
-    "startLine": 19,
-    "endLine": 23
+    "startLine": 21,
+    "endLine": 26
   },
   {
     "outputFile": "ValueSet-ObservationUnitsSerumkreatinin.json",
     "fshName": "ObservationUnitsSerumkreatinin",
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungSerumkreatinin.fsh",
-    "startLine": 20,
-    "endLine": 25
+    "startLine": 39,
+    "endLine": 44
   },
   {
     "outputFile": "ValueSet-ObservationUnitsTSH.json",
     "fshName": "ObservationUnitsTSH",
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungTSH.fsh",
-    "startLine": 19,
-    "endLine": 24
+    "startLine": 57,
+    "endLine": 62
   },
   {
     "outputFile": "ValueSet-ObservationUnitsThrombozyten.json",
     "fshName": "ObservationUnitsThrombozyten",
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungThrombozyten.fsh",
-    "startLine": 19,
-    "endLine": 23
+    "startLine": 28,
+    "endLine": 32
   },
   {
     "outputFile": "ValueSet-ObservationUnitsTroponin.json",
     "fshName": "ObservationUnitsTroponin",
     "fshType": "ValueSet",
     "fshFile": "ISiKLaboruntersuchungTroponin.fsh",
-    "startLine": 20,
-    "endLine": 25
+    "startLine": 26,
+    "endLine": 31
   }
 ]
