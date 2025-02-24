@@ -4,8 +4,8 @@
   "name": "ObservationUnitsGFR",
   "id": "ObservationUnitsGFR",
   "description": "Enthält UCUM-Einheiten für die Observation GFR",
-  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsGFR",
   "version": "4.0.0-rc",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsGFR",
   "experimental": false,
   "publisher": "gematik GmbH",
   "date": "2024-04-04",
@@ -15,7 +15,7 @@
         "system": "http://unitsofmeasure.org",
         "concept": [
           {
-            "code": "mL/min/{1.73_m2}",
+            "code": "mL/min/(1.73)",
             "display": "milliliter pro Minute pro Körperoberfläche von 1,73 m2"
           }
         ]
