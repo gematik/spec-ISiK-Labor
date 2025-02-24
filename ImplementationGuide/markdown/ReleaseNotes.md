@@ -12,9 +12,9 @@ Version: 4.0.0-rc2
 Datum: tbd
 
 - Entfernen von MS von .id der Ressourcen https://github.com/gematik/spec-ISiK-Labor/pull/6
-- `fix` "C-reaktives Protein [Mol/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode" loinc code war falsch. War: 78486-0 , wurde korrigiert auf: 76486-0
-- `fix` ISiKLaboruntersuchungGFR enthielt ein falsches VS binding auf .referenceRange
-- allen Untersuchungsbeispielen wurden effective & performer hinzugefügt
+- `fix` "C-reaktives Protein [Mol/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode" loinc code war falsch. War: 78486-0 , wurde korrigiert auf: 76486-0 https://github.com/gematik/spec-ISiK-Labor/pull/8
+- `fix` ISiKLaboruntersuchungGFR enthielt ein falsches VS binding auf .referenceRange https://github.com/gematik/spec-ISiK-Labor/pull/8
+- allen Untersuchungsbeispielen wurden effective & performer hinzugefügt https://github.com/gematik/spec-ISiK-Labor/pull/8
 
 ----
 
