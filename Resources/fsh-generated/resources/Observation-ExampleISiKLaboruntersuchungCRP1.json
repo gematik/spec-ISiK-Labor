@@ -11,7 +11,7 @@
       "coding": [
         {
           "code": "laboratory",
-          "system": "http://hl7.org/fhir/secondary-finding"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
         }
       ]
     }
@@ -19,14 +19,14 @@
   "code": {
     "coding": [
       {
+        "system": "http://loinc.org",
+        "code": "1988-5",
+        "display": "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma"
+      },
+      {
         "code": "55235003",
         "system": "http://snomed.info/sct",
         "display": "C-reactive protein measurement"
-      },
-      {
-        "code": "1988-5",
-        "system": "http://loinc.org",
-        "display": "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma"
       }
     ]
   },
@@ -47,5 +47,11 @@
   "status": "final",
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
-  }
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/DrMedMusterarzt"
+    }
+  ],
+  "effectiveDateTime": "2021-09-01T12:00:00Z"
 }

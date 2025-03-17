@@ -54,7 +54,7 @@
         "path": "Observation.referenceRange.low",
         "binding": {
           "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesGFR"
+          "valueSet": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsGFR"
         }
       },
       {
@@ -62,7 +62,7 @@
         "path": "Observation.referenceRange.high",
         "binding": {
           "strength": "required",
-          "valueSet": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesGFR"
+          "valueSet": "https://gematik.de/fhir/isik/ValueSet/ObservationUnitsGFR"
         }
       }
     ]

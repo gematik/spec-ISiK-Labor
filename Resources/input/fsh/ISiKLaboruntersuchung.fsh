@@ -7,7 +7,7 @@ Description: "Dieses Profil ermöglicht die Abbildung von Informationen zur Labo
   * ^short = "Status der Laboruntersuchung"
 * category 1.. MS
   * ^short = "Kategorie der Laboruntersuchung"
-* category = ObservationCategoryCodes#laboratory 
+* category = $ObservationCategory#laboratory 
 * code MS
   * ^short = "Gegenstand der Untersuchung (Laborparameter)"  
   * coding
@@ -20,7 +20,7 @@ Description: "Dieses Profil ermöglicht die Abbildung von Informationen zur Labo
     * display MS
   * text MS
   * coding contains loinc 1.. MS and snomed 1..1
-  * coding[loinc] from $vs-observation-codes
+  * coding[loinc] ^patternCoding.system = $loinc
   * coding[snomed] ^patternCoding.system = $sct
 * subject 1.. MS
   * ^short = "Referenz auf den Patienten"

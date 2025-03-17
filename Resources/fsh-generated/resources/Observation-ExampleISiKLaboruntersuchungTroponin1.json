@@ -11,7 +11,7 @@
       "coding": [
         {
           "code": "laboratory",
-          "system": "http://hl7.org/fhir/secondary-finding"
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
         }
       ]
     }
@@ -19,13 +19,13 @@
   "code": {
     "coding": [
       {
+        "system": "http://loinc.org",
+        "code": "42757-5"
+      },
+      {
         "code": "105000003",
         "system": "http://snomed.info/sct",
         "display": "Troponin measurement"
-      },
-      {
-        "code": "42757-5",
-        "system": "http://loinc.org"
       }
     ]
   },
@@ -46,5 +46,11 @@
   "status": "final",
   "subject": {
     "reference": "Patient/PatientinMusterfrau"
-  }
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/DrMedMusterarzt"
+    }
+  ],
+  "effectiveDateTime": "2021-09-01T12:00:00Z"
 }

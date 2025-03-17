@@ -4,8 +4,8 @@
   "name": "ObservationCodesCRP",
   "id": "ObservationCodesCRP",
   "description": "Enthält LOINC-Codes für die Observation CRP",
-  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesCRP",
   "version": "4.0.0-rc",
+  "url": "https://gematik.de/fhir/isik/ValueSet/ObservationCodesCRP",
   "experimental": false,
   "publisher": "gematik GmbH",
   "date": "2024-04-04",
@@ -23,7 +23,7 @@
             "display": "C-reaktives Protein [Masse/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
           },
           {
-            "code": "78486-0",
+            "code": "76486-0",
             "display": "C-reaktives Protein [Mol/Volumen] in Serum oder Plasma mittels Hochsensitivitätsmethode"
           },
           {
