@@ -1,4 +1,4 @@
 - name: Arzneitmitteltherapiesicherheit (AMTS)
-  filename: AMTS
+  filename: AMTS.page.md
 - name: Überleitung in die Intensivversorgung
-  filename: UeberleitungIntensiv 
+  filename: UeberleitungIntensiv.page.md
