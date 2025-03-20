@@ -2,11 +2,12 @@
   filename: Index.page.md
 - name: ReleaseNotes
   filename: ReleaseNotes.page.md
-- name: Use Cases
-  filename: UseCases
-- name: Übergreifende Festlegungen
-  filename: UebergreifendeFestlegungen
-- name: Datenobjekte
-  filename: Datenobjekte
 - name: Zusammenfassung
   filename: Zusammenfassung
+- name: Übergreifende Festlegungen
+  filename: UebergreifendeFestlegungen
+- name: Übergreifende Use Cases
+  filename: UseCases
+- name: Datenobjekte
+  filename: Datenobjekte
+
