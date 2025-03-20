@@ -4,5 +4,5 @@
   filename: Informationsmodell.page.md
 - name: Interaktionen und Search-Types
   filename: InteraktionenUndSearchTypes.page.md
-- name: Anwendungsfälle
+- name: Anwendungsfälle (Use Cases)
   filename: UseCases.page.md 
