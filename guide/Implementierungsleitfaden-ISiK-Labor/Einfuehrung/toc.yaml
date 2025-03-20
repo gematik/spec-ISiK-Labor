@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: Zusammenfassung
-  filename: Zusammenfasssung
 - name: ReleaseNotes
   filename: ReleaseNotes.page.md
 - name: Use Cases
@@ -10,3 +8,5 @@
   filename: UebergreifendeFestlegungen
 - name: Datenobjekte
   filename: Datenobjekte
+- name: Zusammenfassung
+  filename: Zusammenfassung
