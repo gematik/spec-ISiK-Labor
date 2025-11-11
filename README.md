@@ -38,7 +38,7 @@ See [ReleaseNotes.md](/ImplementationGuide/markdown/ReleaseNotes.md) for all inf
 
 ## License
 
-Copyright 2024 - 2025 gematik GmbH
+Copyright 2025 gematik GmbH
 
 Apache License, Version 2.0
 
